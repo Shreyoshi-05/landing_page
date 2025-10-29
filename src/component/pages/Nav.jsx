@@ -7,7 +7,7 @@ import { ImCross } from "react-icons/im";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [smallSize, setSmallSize] = useState(false);
+  const [smallSize, setSmallSize] = useState(window.innerWidth < 900);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -33,6 +33,7 @@ const Nav = () => {
         setSmallSize(false);
       }
     }
+    //  getSize();
 
     window.addEventListener("resize", getSize);
     return () => removeEventListener("resize", getSize);
@@ -75,7 +76,7 @@ const Nav = () => {
       
     </div>
     {
-      open && <div className="dropdown">
+      smallSize && open && <div className="dropdown">
         <Link to="#">me</Link>
         <Link to="#">About</Link>
         <Link to="#">Packages</Link>
