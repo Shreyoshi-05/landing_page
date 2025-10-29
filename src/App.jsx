@@ -5,7 +5,7 @@ import Lfooter from "./component/pages/Lfooter";
 import Nav from "./component/pages/Nav";
 import Sfooter from "./component/pages/Sfooter";
 import Testimonial from "./component/pages/Testimonial";
-import Ffooter from "./component/pages/ffooter";
+import Ffooter from './component/pages/Ffooter'
 
 const App = () => {
   return (
