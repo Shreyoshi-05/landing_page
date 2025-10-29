@@ -1,4 +1,4 @@
-/* === Hero Section === */
+
 .hero {
   display: flex;
   align-items: center;
@@ -15,7 +15,6 @@
   position: relative;
 }
 
-/* === Left Section (Text + Buttons) === */
 .hero_left {
   flex: 1;
   display: flex;
@@ -37,7 +36,6 @@
   max-width: 600px;
 }
 
-/* === Buttons === */
 .hero_btn {
   display: flex;
   gap: 1rem;
@@ -74,7 +72,6 @@
   color: #fff;
 }
 
-/* === Right Section (Image) === */
 .hero_right {
   flex: 1;
   display: flex;

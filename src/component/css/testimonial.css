@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* ===== HEADER ===== */
 .textimonial h2 {
   font-size: 2.2rem;
   font-weight: 800;
@@ -25,7 +24,6 @@
   line-height: 1.5;
 }
 
-/* ===== TOP IMAGE ===== */
 .textimonial > img {
   width: 100%;
   max-width: 1200px;
@@ -36,7 +34,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* ===== QUESTIONS SECTION ===== */
 .questions {
   display: flex;
   justify-content: space-between;
@@ -47,7 +44,6 @@
   flex-wrap: wrap;
 }
 
-/* LEFT COLUMN (FAQ INFO) */
 .qus_lf {
   flex: 1 1 40%;
   background-color: #fff;
@@ -74,7 +70,6 @@
   line-height: 1.5;
 }
 
-/* Inner image (inside .qus_lf) */
 .qus_lf img {
   width: 50%;
   max-width: 250px;
@@ -88,7 +83,6 @@
   transform: scale(1.05);
 }
 
-/* RIGHT COLUMN (FAQ ACCORDION) */
 .qus_ri {
   flex: 1 1 55%;
   display: flex;
@@ -96,7 +90,6 @@
   gap: 1rem;
 }
 
-/* Each question block */
 .ques_constiner {
   background-color: #fff;
   border-radius: 12px;
@@ -113,7 +106,6 @@
   transform: translateY(-2px);
 }
 
-/* Question line */
 .ques {
   display: flex;
   align-items: center;
@@ -128,7 +120,6 @@
   margin-bottom: 0.6rem;
 }
 
-/* Add Icon */
 .ques svg {
   font-size: 1.3rem;
   color: #6a4df5;
@@ -140,7 +131,6 @@
   transform: rotate(90deg);
 }
 
-/* Answer section (expand/collapse animation) */
 .ans {
   font-size: 0.9rem;
   color: #555;
@@ -160,7 +150,6 @@
   }
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1100px) {
   .textimonial {
     padding: 4rem 6rem;
