@@ -1,0 +1,148 @@
+.blog {
+  padding: 6rem 13rem;
+  position: relative;
+  text-align: center;
+  /* background-color: #fafafa; */
+}
+
+.blog h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.blog p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* ✅ SCROLL CONTAINER */
+.blog_constiner {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.blog_constiner::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* ✅ CARD STYLE */
+.blog_cart {
+  flex: 0 0 18rem; /* card width */
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog_cart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(243, 104, 208, 0.12);
+}
+
+.blog_cart img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.blog_cart p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.blog_cart h4 {
+  font-size: 1rem;
+  color: #2c2c54;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.blog_cart a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6c63ff;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.blog_cart a:hover {
+  color: #9b59b6;
+}
+
+/* ✅ ARROW ICONS */
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9b59b6;
+  cursor: pointer;
+  z-index: 10;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.left:hover,
+.right:hover {
+  transform: translateY(-50%) scale(1.1);
+  color: #6c63ff;
+}
+
+.left {
+  left: 2rem;
+}
+
+.right {
+  right: 2rem;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .blog {
+    padding: 5rem 4rem;
+  }
+  .blog_cart {
+    flex: 0 0 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 4rem 2rem;
+  }
+  .blog_cart {
+    flex: 0 0 12rem;
+  }
+  .left {
+    left: 1rem;
+  }
+  .right {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog_cart {
+    flex: 0 0 85%;
+    margin: auto;
+  }
+  .left,
+  .right {
+    display: none; /* hide arrows on very small screens */
+  }
+}

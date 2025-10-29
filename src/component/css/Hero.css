@@ -1,0 +1,199 @@
+/* === Hero Section === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7rem 8%;
+  /* min-height: 70vh; */
+  background-image: url(/hero.png);
+  color: #fff;
+  gap: 3rem;
+  overflow: hidden;
+  /* padding-top: 9rem; */
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  position: relative;
+}
+
+/* === Left Section (Text + Buttons) === */
+.hero_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero_left h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero_left p {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* === Buttons === */
+.hero_btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero_btn button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero_btn button:first-child {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.hero_btn button:first-child:hover {
+  background-color: #0195a5;
+}
+
+.hero_btn button:last-child {
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+}
+
+.hero_btn button:last-child:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* === Right Section (Image) === */
+.hero_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_right img {
+  padding-top: 4rem;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+.cartoon{
+  width: 100%;
+  position: absolute;
+  bottom: -17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartoon img{
+  width: 85%;
+  
+}
+.hero_page{
+  height: 138vh;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+
+  .hero_left h2 {
+    font-size: 2rem;
+  }
+
+  .hero_left p {
+    font-size: 1rem;
+  }
+
+  .hero_right img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+    padding-top: 7rem;
+  }
+
+  .hero_left {
+    align-items: center;
+  }
+
+  .hero_left h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero_left p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .hero_btn {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hero_btn button {
+    width: 80%;
+  }
+
+  .hero_right img {
+    max-width: 350px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    
+  }
+
+  .hero_left h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero_left p {
+    font-size: 0.9rem;
+  }
+
+  .hero_btn button {
+    width: 100%;
+  }
+
+  .hero_right img {
+    max-width: 280px;
+  }
+}
